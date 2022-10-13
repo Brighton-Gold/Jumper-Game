@@ -9,7 +9,7 @@ class game
 
       BlankList = []
 
-       for each letter in length of word:
+       for each letter in length of word
 
             BlankList.append("_")
 
