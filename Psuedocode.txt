@@ -1,21 +1,22 @@
-class word:
-    listofwords = ["frog", "dog", "fog"]
+# class word:
+#     listofwords = ["frog", "dog", "fog"]
 
-    return random listofwords[number]
+#     return random listofwords[number]
 
 
-class game
-  def game(word, user_guess)
+# class game
+#   def game(word, user_guess)
 
-      BlankList = []
+#       BlankList = []
 
-       for each letter in length of word
+#        for each letter in length of word
 
-            BlankList.append("_")
+#             BlankList.append("_")
 
-        for i in length of word:
+#         for i in length of word:
 
-            if user_guess == word[i]
-              BlankList[i] == user_guess
+#             if user_guess == word[i]
+#               BlankList[i] == user_guess
 
-        return BlankList
+#         return BlankList
+
