@@ -1,0 +1,15 @@
+C:\Users\brigh\Documents\GitHub\Jumper-Game\obj\Debug\net6.0\Jumper-Game.csproj.AssemblyReference.cache
+C:\Users\brigh\Documents\GitHub\Jumper-Game\obj\Debug\net6.0\Jumper-Game.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brigh\Documents\GitHub\Jumper-Game\obj\Debug\net6.0\Jumper-Game.AssemblyInfoInputs.cache
+C:\Users\brigh\Documents\GitHub\Jumper-Game\obj\Debug\net6.0\Jumper-Game.AssemblyInfo.cs
+C:\Users\brigh\Documents\GitHub\Jumper-Game\obj\Debug\net6.0\Jumper-Game.csproj.CoreCompileInputs.cache
+C:\Users\brigh\Documents\GitHub\Jumper-Game\bin\Debug\net6.0\Jumper-Game.exe
+C:\Users\brigh\Documents\GitHub\Jumper-Game\bin\Debug\net6.0\Jumper-Game.deps.json
+C:\Users\brigh\Documents\GitHub\Jumper-Game\bin\Debug\net6.0\Jumper-Game.runtimeconfig.json
+C:\Users\brigh\Documents\GitHub\Jumper-Game\bin\Debug\net6.0\Jumper-Game.dll
+C:\Users\brigh\Documents\GitHub\Jumper-Game\bin\Debug\net6.0\Jumper-Game.pdb
+C:\Users\brigh\Documents\GitHub\Jumper-Game\obj\Debug\net6.0\Jumper-Game.dll
+C:\Users\brigh\Documents\GitHub\Jumper-Game\obj\Debug\net6.0\refint\Jumper-Game.dll
+C:\Users\brigh\Documents\GitHub\Jumper-Game\obj\Debug\net6.0\Jumper-Game.pdb
+C:\Users\brigh\Documents\GitHub\Jumper-Game\obj\Debug\net6.0\Jumper-Game.genruntimeconfig.cache
+C:\Users\brigh\Documents\GitHub\Jumper-Game\obj\Debug\net6.0\ref\Jumper-Game.dll
