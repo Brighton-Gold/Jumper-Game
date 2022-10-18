@@ -1,0 +1,32 @@
+class word:
+    listofwords = ["frog", "dog", "fog"]
+
+    return random listofwords[number]
+
+
+def create blank list(word)
+      BlankList = []
+
+
+       for each letter in length of word
+
+            BlankList.append("_")
+
+            return BlankList
+
+class game
+
+  def game(word, user_guess, blanklist)
+        IsGuessTrue = False
+
+        for i in length of word:
+
+            if user_guess == word[i]
+                BlankList[i] == user_guess
+                IsGuessTrue = True
+
+
+        return BlankList, IsGuessTrue
+
+
+        
