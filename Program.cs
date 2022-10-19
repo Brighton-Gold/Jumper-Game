@@ -6,8 +6,8 @@ class Program
         /// Test for display blank list. Works!
         Display display = new Display();
         string[] BlankList = {"_","_","_","_"};
-        display.DisplayJumper(false, BlankList);
 
+        
         
 
     }

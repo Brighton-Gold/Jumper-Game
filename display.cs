@@ -1,6 +1,9 @@
 class Display
 {
-    string[] Jumper = { " ---", @"/___\", @"\   /", @" \ /" };
+
+    List<string> Jumper = new List<string>
+
+    {@" ---", @"/___\", @"\   /", @" \ /"};
 
     public void DisplayJumper(bool IsGuessTrue, string[] BlankList)
     {
@@ -11,20 +14,33 @@ class Display
 
         }
 
+        Console.WriteLine("\n");
 
-        if (IsGuessTrue == false)
+
+        if (IsGuessTrue == false) //If THe user guess is false, then the first element is removed from the list. 
         {
-            Jumper.RemoveAt(0); //need to fix
+            Jumper.RemoveAt(0);
         }
 
-        foreach (var i in Jumper)
+        int JumperLength = Jumper.Count;
+        if(JumperLength != 0)
         {
-            Console.WriteLine(i);
+            foreach (var i in Jumper)
+            {
+                Console.WriteLine(i);
+
+            }
+            Console.WriteLine("  O");
 
         }
 
+        else
+        {
+            Console.WriteLine("  X");
+        }
 
-
+        Console.WriteLine(@" /|\");
+        Console.WriteLine(@" / \");
 
 
     }
