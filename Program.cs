@@ -7,6 +7,11 @@ class Program
         Display display = new Display();
         string[] BlankList = {"_","_","_","_"};
 
+        Library library = new Library();
+        string Word = library.pickRandomWord();
+
+        Console.Write(Word);
+
         
         
 

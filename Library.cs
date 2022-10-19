@@ -22,12 +22,13 @@ class Library
         library.Add("kill");
     }
 
-    public string pickRandomWord(List<string> library)
+    public string pickRandomWord()
     {
         Random random = new Random();
         int num = random.Next(15);
         return library[num];
     }
+
 
     // public Library.pickRandomWord()
     // {
