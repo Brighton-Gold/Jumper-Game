@@ -10,10 +10,8 @@ class Program
         Library library = new Library();
         string Word = library.pickRandomWord();
 
-        Console.Write(Word);
-
-        
-        
+        // Console.Write(Word);
+        Console.WriteLine(BlankList);
 
     }
 
