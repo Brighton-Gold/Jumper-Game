@@ -5,7 +5,7 @@ class Display
 
     {@" ---", @"/___\", @"\   /", @" \ /"};
 
-    public void DisplayJumper(bool IsGuessTrue, string[] BlankList)
+    public void DisplayJumper(bool IsGuessTrue, List <string> BlankList)
     {
         foreach (var i in BlankList)
         {

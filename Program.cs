@@ -5,15 +5,29 @@ class Program
     {
         /// Test for display blank list. Works!
         Display display = new Display();
-        string[] BlankList = {"_","_","_","_"};
 
         Library library = new Library();
-        string Word = library.pickRandomWord();
+        string Word = "frog";
 
-        Console.Write(Word);
+
+        CompareWord compare = new CompareWord();
+
+        List<string> BlankList = compare.CreateBlankList(Word);
+
+        Tuple<bool, List<string>> tuple;
+        bool Guess = false;
 
         
-        
+        tuple = compare.CompareLetter(Word, "o");
+
+        Guess = tuple.Item1;
+        List <string> WordList = tuple.Item2;
+
+        foreach(string Item in WordList){
+            Console.Write(Item);
+        }
+
+
 
     }
 
