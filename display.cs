@@ -44,6 +44,16 @@ class Display
 
 
     }
+    public bool CheckJumper()
+    {
+        bool ListisUnfinished = false;
+        
+        if(Jumper.Count != 1){
+            ListisUnfinished = true;
+        }
+        return ListisUnfinished;
+    }
+
 
 
 }

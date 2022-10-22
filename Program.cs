@@ -5,27 +5,55 @@ class Program
     {
         /// Test for display blank list. Works!
         Display display = new Display();
-
-        Library library = new Library();
-        string Word = "frog";
-
-
         CompareWord compare = new CompareWord();
+        Library library = new Library();
 
+        string Word = library.pickRandomWord();
         List<string> BlankList = compare.CreateBlankList(Word);
+        bool DefaultGuess = true;
+        bool ListisUnfinished = true;
+        bool DoesJumperHaveParachute = true;
 
-        Tuple<bool, List<string>> tuple;
-        bool Guess = false;
+        display.DisplayJumper(DefaultGuess, BlankList);
 
-        
-        tuple = compare.CompareLetter(Word, "o");
 
-        Guess = tuple.Item1;
-        List <string> WordList = tuple.Item2;
 
-        foreach(string Item in WordList){
-            Console.Write(Item);
+        while ((ListisUnfinished = true) && (DoesJumperHaveParachute = true)) // Check if list still is blank, or out of parachute.
+        {
+
+            Console.WriteLine("Please guess a random letter");
+            string UserGuess = Console.ReadLine();
+
+            if (UserGuess == "cheat")    // Cheatcode!!!
+            {
+                Console.WriteLine(Word);
+                Console.WriteLine("Please guess a random letter");
+                UserGuess = Console.ReadLine();
+            }
+
+            UserGuess = UserGuess.ToLower();
+
+            bool GuessIsTrue = compare.CompareLetter(Word, UserGuess);
+
+            if (GuessIsTrue == true)
+            {
+                List<string> UpdatedList = compare.SwapLetter(Word, UserGuess, BlankList);
+                display.DisplayJumper(GuessIsTrue, UpdatedList);
+
+            }
+
+            else
+            {
+                DoesJumperHaveParachute = display.CheckJumper();
+                ListisUnfinished = compare.CheckBlankList(BlankList);
+                display.DisplayJumper(GuessIsTrue, BlankList);
+
+            }
+
+
         }
+
+
 
 
 

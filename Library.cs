@@ -25,7 +25,7 @@ class Library
     public string pickRandomWord()
     {
         Random random = new Random();
-        int num = random.Next(15);
+        int num = random.Next(14);
         return library[num];
     }
 

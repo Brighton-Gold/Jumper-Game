@@ -16,10 +16,8 @@ class CompareWord
         return (BlankList);
 
     }
-    public Tuple<bool, List<string>> CompareLetter(string Answer, string Guess)
+    public bool CompareLetter(string Answer, string Guess)
     {
-
-        List<string> BlankList = new List<string> { };
 
         bool GuessIsTrue = false;
         int AnswerLength = Answer.Length;
@@ -33,19 +31,47 @@ class CompareWord
 
                 if (Letter.ToString() == Guess)
                 {
-                    // Remove Element. 
-                    BlankList.RemoveAt(i);
-                    // Replace Element. 
-                    BlankList.Insert(i, Guess);
-                    // Guess was accurate, so now set to true. 
                     GuessIsTrue = true;
 
                 }
             }
 
         }
-        Tuple<bool, List<string>> tuple = new Tuple<bool, List<string>>(GuessIsTrue, BlankList);
 
-        return (tuple);
+        return (GuessIsTrue);
+    }
+
+    public List<string> SwapLetter(string Answer, string Guess, List<string> BlankList)
+    {
+        int AnswerLength = Answer.Length;
+
+        for (int i = 0; i < AnswerLength; i++)
+        {
+            if (Answer[i].ToString() == Guess)
+            {
+                // Remove Element. 
+                BlankList[i] = Guess;
+
+            }
+
+
+        }
+        return (BlankList);
+
+    }
+
+    public bool CheckBlankList(List<string> BlankList)
+    {
+        bool ListisUnfinished = false;
+        
+        foreach (var item in BlankList)
+        {
+            if (item == "_")
+            {
+                ListisUnfinished = true;
+            }
+            
+        }
+        return ListisUnfinished;
     }
 }
