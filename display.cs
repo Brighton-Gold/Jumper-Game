@@ -5,7 +5,7 @@ class Display
 
     {@" ---", @"/___\", @"\   /", @" \ /"};
 
-    public void DisplayJumper(bool IsGuessTrue, string[] BlankList)
+    public void DisplayJumper(bool IsGuessTrue, List <string> BlankList)
     {
         foreach (var i in BlankList)
         {
@@ -44,6 +44,16 @@ class Display
 
 
     }
+    public bool CheckJumper()
+    {
+        bool ListisUnfinished = false;
+        
+        if(Jumper.Count != 1){
+            ListisUnfinished = true;
+        }
+        return ListisUnfinished;
+    }
+
 
 
 }
