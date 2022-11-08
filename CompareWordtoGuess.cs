@@ -64,7 +64,7 @@ class CompareWord
     {
         bool ListisUnfinished = false;
         
-        foreach (var item in BlankList)
+        foreach (string item in BlankList)
         {
             if (item == "_")
             {
