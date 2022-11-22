@@ -46,12 +46,12 @@ class Display
     }
     public bool CheckJumper()
     {
-        bool ListisUnfinished = false;
+        bool ListisFinished = true;
         
-        if(Jumper.Count != 1){
-            ListisUnfinished = true;
+        if(Jumper.Count == 0){
+            ListisFinished = false;
         }
-        return ListisUnfinished;
+        return ListisFinished;
     }
 
 

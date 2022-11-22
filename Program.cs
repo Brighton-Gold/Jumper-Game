@@ -11,14 +11,13 @@ class Program
         string Word = library.pickRandomWord();
         List<string> BlankList = compare.CreateBlankList(Word);
         bool DefaultGuess = true;
-        bool Listisfinished = true;
+        bool Listisfinished = false;
         bool DoesJumperHaveParachute = true;
 
         display.DisplayJumper(DefaultGuess, BlankList);
 
 
-
-        while ((Listisfinished = true) || (DoesJumperHaveParachute = true)) // Check if list still is blank, or out of parachute.
+        while ((Listisfinished == false) && (DoesJumperHaveParachute == true)) // Check if list still is blank or out of parachute.
         {
 
             Console.WriteLine("Please guess a random letter");
@@ -37,8 +36,8 @@ class Program
 
             if (GuessIsTrue == true)
             {
-                List<string> UpdatedList = compare.SwapLetter(Word, UserGuess, BlankList);
-                display.DisplayJumper(GuessIsTrue, UpdatedList);
+                BlankList = compare.SwapLetter(Word, UserGuess, BlankList);
+                display.DisplayJumper(GuessIsTrue, BlankList);
 
             }
 
@@ -47,18 +46,14 @@ class Program
                 display.DisplayJumper(GuessIsTrue, BlankList);
 
             }
-            
+
             DoesJumperHaveParachute = display.CheckJumper();
 
             Listisfinished = compare.CheckBlankList(BlankList);
 
-
         }
+
         Console.Write("Game Over!");
-
-
-
-
 
     }
 

@@ -62,16 +62,16 @@ class CompareWord
 
     public bool CheckBlankList(List<string> BlankList)
     {
-        bool ListisUnfinished = false;
+        bool ListisFinished = true;
         
         foreach (string item in BlankList)
         {
             if (item == "_")
             {
-                ListisUnfinished = true;
+                ListisFinished = false;
             }
             
         }
-        return ListisUnfinished;
+        return ListisFinished;
     }
 }
